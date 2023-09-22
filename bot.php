@@ -119,7 +119,7 @@ bot('Sendmessage',[
 
 🚫 جهت عضویت روی دکمه زیر کلیک کنید و دوباره /start رو ارسال کنید.
 ",
-'reply_markup'=>json_encode([
+'reply_markup'=>json_encode(
 'inline_keyboard'=>[
 [
 ['text'=>"📢 عضویت در کانال",'url'=>"https://t.me/$chlok"]
