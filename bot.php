@@ -53,6 +53,36 @@ function IranTime(){
         date_default_timezone_set("Asia/Tehran");
         return date('H:i:s');
     }
+<?php
+// Database connection
+$servername = "localhost";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_database";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// SQL query
+$sql = "SELECT * FROM your_table";
+$result = mysqli_query($conn, $sql);
+
+// Fetch and display data
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "ID: " . $row["id"] . " - Name: " . $row["name"] . "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+// Close the database connection
+mysqli_close($conn);
+?>
+
 //----------------//
 $update = json_decode(file_get_contents('php://input'));
 $message = $update->message;
