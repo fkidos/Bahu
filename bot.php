@@ -45,7 +45,6 @@ function sendphoto($chat_id, $photo, $caption){
  }
 function sendAction($chat_id, $action){
 bot('sendChataction',[
-'chat_id'=>$chat_id,
 'action'=>$action
 ]);
 }
