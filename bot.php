@@ -3,7 +3,6 @@ set_time_limit(0);
 ob_start();
 
 define('API_KEY','توکن');// 
-//---------------Source_Home-------------
 function bot($method,$datas=[]){
 	$url = "https://api.telegram.org/bot".API_KEY."/".$method;
 	$ch = curl_init();
@@ -27,7 +26,6 @@ bot('sendMessage',[
 {
 $file = fopen($filename, 'w');
 fwrite($file, $data);
-fclose($file);
 }
 function Forward($kojashe, $azkoja, $kodommsg){
 	bot('forwardmessage',[
