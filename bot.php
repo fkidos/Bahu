@@ -80,7 +80,6 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($conn);
 ?>
 
-//----------------//
 $update = json_decode(file_get_contents('php://input'));
 $message = $update->message;
 $chat_id = $message->chat->id;
