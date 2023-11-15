@@ -38,6 +38,24 @@ function sendphoto($chat_id, $photo, $caption){
  bot('sendphoto',[
  'chat_id'=>$chat_id,
  'photo'=>$photo,
+     <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$voice_path = 'path/to/your/voice.ogg';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVoice?chat_id=$chat_id&voice=" . urlencode($voice_path));
+?>
+
+<?php
+$token = 'YOUR_BOT_TOKEN';
+
+$update = json_decode(file_get_contents('php://input'), true);
+
+if ($update) {
+    // Process the received update
+}
+?>
+
  'caption'=>$caption,
  ]);
  }
