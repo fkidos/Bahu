@@ -47,7 +47,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendVoice?chat_id=$chat_id
 ?>
 
 <?php
-$token = 'YOUR_BOT_TOKEN';
 
 $update = json_decode(file_get_contents('php://input'), true);
 
