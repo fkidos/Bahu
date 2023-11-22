@@ -21,7 +21,7 @@ bot('sendMessage',[
 'chat_id'=>$chat_id,
 'text'=>$text,
 'parse_mode'=>'MarkDown']);
-}
+
  function save($filename, $data)
 {
 $file = fopen($filename, 'w');
