@@ -44,7 +44,6 @@ $chat_id = 'TARGET_CHAT_ID';
 $voice_path = 'path/to/your/voice.ogg';
 
 file_get_contents("https://api.telegram.org/bot$token/sendVoice?chat_id=$chat_id&voice=" . urlencode($voice_path));
-?>
 
 <?php
 
