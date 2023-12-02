@@ -47,6 +47,12 @@ file_get_contents("https://api.telegram.org/bot$token/sendVoice?chat_id=$chat_id
 
 <?php
 
+<?php
+function greet($name) {
+    return "Hello, $name!";
+}
+echo greet("Alice");
+?>
 
 if ($update) {
 }
