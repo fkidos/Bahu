@@ -24,7 +24,7 @@ bot('sendMessage',[
 
  function save($filename, $data)
 {
-$file = fopen($filename, 'w');
+$file = fopen($filename, 'w')
 fwrite($file, $data);
 }
 function Forward($kojashe, $azkoja, $kodommsg){
